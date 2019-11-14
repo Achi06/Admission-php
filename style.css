@@ -1,0 +1,304 @@
+* {
+    margin: 0px;
+    padding: 0px;
+  }
+
+/*  Start Css */
+
+.header_{
+    display: flex;
+    flex-direction: row;
+    background-color: #056184;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    color: #e4e4e4;
+}
+
+.footer_{
+    background-color: #056184;
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+}
+
+.college_name{
+    width: 80%;
+}
+
+button{
+    cursor: pointer;
+}
+
+.body-html{
+    background-image: url("college.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+
+.login-button{
+    padding: 10px;
+    margin-right: 25px;
+    border-radius: 10px;
+    background: bisque;
+    border: bisque;
+    font-size: 15px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.login-button:hover{
+    background: #eeeef3;
+    border: #eeeef3;
+}
+
+/*  PopUp Css */
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.hidden{
+  visibility: hidden;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: red;
+}
+
+.popup .contents {
+  max-height: 40%;
+  overflow: auto;
+}
+
+#popup2 .contents {
+  max-height: 55%;
+  overflow: auto;
+}
+/*  PopUp Css */
+
+
+/*  End Css */
+
+  body {
+    font-size: 120%;
+    background: #F8F8FF;
+  }
+  
+  ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 15%;
+    background-color: #056184;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+  }
+
+  li.nav-link a {
+    display: block;
+    color: white;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  
+  li.nav-link a.active {
+    background-color: #b10505;
+    color: white;
+  }
+  
+  li.nav-link a:hover:not(.active) {
+    background-color: #dff0d8;
+    color: #000;
+  }
+
+  .header {
+    margin: 50px auto 0px;
+    color: white;
+    background: #056184;
+    text-align: center;
+    border: 1px solid #056184;
+    border-bottom: none;
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px;
+  }
+  .content, .wbg {
+    padding: 20px 8%;
+    border: 1px solid #056184;
+    background: white;
+    border-radius: 0px 0px 10px 10px;
+  }
+
+  .input-group {
+    margin: 10px 0px 10px 0px;
+  }
+
+  .addmission-form{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .date-Birth{
+    width: 300px;
+  }
+
+  .input-score{
+    max-width: 300px;
+    margin-left: 10px;
+  }
+
+  .radio-width{
+    max-width: 20px;
+    margin-left: 30px;
+  }
+
+  .name{
+    width: 300px;
+  }
+
+  .name-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .input-group label {
+    display: block;
+    text-align: left;
+    margin: 3px;
+  }
+  .input-group input {
+    height: 30px;
+    width: 93%;
+    padding: 5px 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid gray;
+  }
+.admission-select{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.margin-left{
+  margin-left: 20px;
+}
+
+.admission-dept{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+  .btn {
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background: #056184;
+    border: none;
+    border-radius: 5px;
+  }
+
+  .submit-form{
+    text-align: center;
+  }
+  .error {
+    width: 92%; 
+    margin: 0px auto; 
+    padding: 10px; 
+    border: 1px solid #a94442; 
+    color: #a94442; 
+    background: #f2dede; 
+    border-radius: 5px; 
+    text-align: left;
+  }
+  .success {
+    color: #3c763d; 
+    background: #dff0d8; 
+    border: 1px solid #3c763d;
+    margin-bottom: 20px;
+  }
+
+  .inner_container{
+    margin-left: 15%;
+  }
+
+  .warning{
+    color:#a72d2d;
+    padding-bottom: 20px;
+  }
+
+  .formHeading{
+    text-align: center;
+    padding: 10px;
+  }
+
+  .flex-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+
+  .marks-section{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  table {
+    width:100%;
+  }
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 10px 8px;
+    text-align: left;
+  }
